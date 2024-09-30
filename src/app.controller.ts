@@ -21,8 +21,6 @@ export class AppController {
       // Decodifica la URL
       const normalizedUrl = this.normalizeUrl(link);
 
-      console.log(normalizedUrl);
-
       // Verifica si la URL tiene un esquema (http o https)
       if (
         !normalizedUrl.startsWith('http://') &&
