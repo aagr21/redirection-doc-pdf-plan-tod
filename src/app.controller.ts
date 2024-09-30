@@ -53,6 +53,12 @@ export class AppController {
         .replace(/%2F/g, '/') // Slash
         .replace(/%3A/g, ':') // Dos puntos
         .replace(/%2C/g, ',') // Comas
+        .replace(/%3F/g, '?') // Signo de interrogación
+        .replace(/%3D/g, '=') // Signo igual
+        .replace(/%21/g, '!') // Signo de exclamación
+        .replace(/%27/g, "'") // Comilla simple
+        .replace(/%28/g, '(') // Paréntesis izquierdo
+        .replace(/%29/g, ')') // Paréntesis derecho
         // Manejo de mayúsculas acentuadas
         .replace(/%C1/g, 'Á') // A con acento
         .replace(/%C9/g, 'É') // E con acento
